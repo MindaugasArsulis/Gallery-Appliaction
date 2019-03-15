@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="native" xmlns:xh="xhtml" xmlns:sh="shadow">
+    <xh:div self="@{define(pageContent)}" viewModel="@id('vm') @init('com.insoft.practice.viewmodel.HomePageVm')">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Title</title>
+    </head>
+    <body>
+        <xh:div>
+            <sh:if test="${'a' eq 'a'}">
+                <xh:div>
+
+                </xh:div>
+            </sh:if>
+        </xh:div>
+    </body>
+    </xh:div>
+</html>
+
+
+

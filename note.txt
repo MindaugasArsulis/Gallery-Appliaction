@@ -1,0 +1,49 @@
+bootStrap
+
+        <!--<dependency>-->
+            <!--<groupId>org.junit.jupiter</groupId>-->
+            <!--<artifactId>junit-jupiter-api</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.junit.jupiter</groupId>-->
+            <!--<artifactId>junit-jupiter-params</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+
+ <!--xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">-->
+
+<!--onClick='Executions.sendRedirect("${vm.getSmallImage(each.imageId)}");'-->
+<!--"@command(vm.getLargeImage(each.imageId))"-->
+<!--"${c:encodeURL(vm.doShowLargeImage(each.imageId)}"-->
+<!--<xh:a href="${c:encodeURL(vm.doShowLargeImage(each.imageId))}">-->
+<property name="hibernate.enable_lazy_load_no_trans">true</property>
+
+//    private Validator textValidator;
+//    public Validator getTextValidator() {
+//        return new AbstractValidator() {
+//            public void validate(ValidationContext ctx) {
+//                if(ctx == null) {
+//                    addInvalidMessage(ctx, "text only ");//but this method doesn't work
+//                }
+//                System.out.println("cia");
+//                String str = (String) ctx.getProperty().getValue();
+//                String reg = "^[a-zA-Z\\']+$";
+//                boolean mes = str.matches(reg);
+//                System.out.println("the msg:" + mes);//upto this line working
+//                if (!mes) {
+//                    addInvalidMessage(ctx, "text only ");//but this method doesn't work
+//                }
+//
+//            }
+//        };
+//    }
+
+    //    public AImage getLargeImage (Long id) throws IOException {
+//        return new AImage(imageService.getImageById(id).getImageName(), imageService.getImageById(id).getImage());
+//    }
+
+git branch --set-upstream-to=origin/master master
+changed README.md in github, didn't let to push without this command in folder with git Bash
+
+<?component name="component" macro-URI="/WEB-INF/component/component.zul" class="com.insoft.practice.components.DeleteImageComp"?>

@@ -1,0 +1,4 @@
+com\insoft\practice\controllers\EditImageController.class
+com\insoft\practice\controllers\ImageUploadController.class
+com\insoft\practice\conf\SecurityConfig.class
+com\insoft\practice\SpringBootWebApplication.class

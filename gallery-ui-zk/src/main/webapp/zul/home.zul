@@ -1,0 +1,47 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="template.zul" ?>
+<?page complete="true"?>
+
+
+<zk xmlns="native" xmlns:xh="xhtml" xmlns:sh="shadow" xmlns:zul="http://www.zkoss.org/2005/zul">
+    <xh:div self="@{define(pageContent)}" viewModel="@id('vm') @init('com.insoft.practice.viewmodel.HomePageVm')">
+        <div class="container">
+
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h1>Photo
+                        <img src="${c:encodeURL('/images/upload.png')}" alt="upload logo" title="Upload logo"
+                             class="uploads"/>
+                        <!--th:src="@{.../images/upload.png}" th:alt-title="logo" -->
+                        Service
+                    </h1>
+                </div>
+            </div>
+            <!--upload file-->
+            <zul:div if="${sec:isAnyGranted('ROLE_USER,ROLE_ADMIN')}">
+                <div class="row top-buffer">
+                    <xh:div class="col-sm-12">
+                        <h5>Upload photo:</h5>
+                        <zul:fileupload upload="true" label="File Upload"
+                                        onUpload="@command('doUploadImage', media=event.media)" id="tosCheckbox"/>
+                    </xh:div>
+                </div>
+            </zul:div>
+            <div class="row top-buffer">
+                <div class="col-sm-12 ml-auto">
+                    <h5>Search for a photo:</h5>
+                </div>
+                <div class="clearfix visible-sm-block"/>
+
+            </div>
+            <zul:searchkompon/>
+            <div class="row top-buffer">
+                <div class="col-sm-12">
+                    <h6>Recently uploaded:</h6>
+                </div>
+            </div>
+            <zul:tablekompon label="${vm.entityList}"/>
+        </div>
+
+
+    </xh:div>
+</zk>

@@ -1,0 +1,9 @@
+com\insoft\practice\bl\repositories\ImageTagRepositoryImpl.class
+com\insoft\practice\bl\services\ImageService.class
+com\insoft\practice\bl\services\ImageTagService.class
+com\insoft\practice\bl\services\impl\ImageServiceImpl.class
+com\insoft\practice\bl\services\impl\ImageTagServiceImpl.class
+com\insoft\practice\bl\exception\FileStorageException.class
+com\insoft\practice\bl\repositories\ImageTagRepository.class
+com\insoft\practice\bl\repositories\ImageRepositoryImpl.class
+com\insoft\practice\bl\repositories\ImageRepository.class

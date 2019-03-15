@@ -1,0 +1,25 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="template.zul" ?>
+<?page complete="true"?>
+
+
+<zk xmlns="native" xmlns:xh="xhtml" xmlns:sh="shadow" xmlns:zul="http://www.zkoss.org/2005/zul"
+    xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <xh:div self="@{define(pageContent)}" viewModel="@id('vm') @init('com.insoft.practice.viewmodel.SearchPageVm')">
+        <div class="container">
+            <zul:searchkompon/>
+            <div class="row mt-5">
+                <div class="col-auto mr-auto">
+                    <span>Showing by</span>
+                    <span>${vm.keyword}</span>
+                    <span>:</span>
+                    <span>${vm.searchText}</span>
+                </div>
+                <div class="col-auto">
+                    <span>Found:</span>
+                    <span>${vm.entityList.size()}</span>
+                </div>
+            </div>
+            <zul:tablekompon label="${vm.entityList}"/>
+        </div>
+    </xh:div>
+</zk>

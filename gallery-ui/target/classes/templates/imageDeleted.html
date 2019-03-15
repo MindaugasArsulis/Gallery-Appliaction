@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{Layout}">
+<body>
+<section layout:fragment="content-section">
+    <div class="container mt-3">
+        <div class="row justify-content-md-center">
+            <span style="color: red" th:text="${msg}"></span>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

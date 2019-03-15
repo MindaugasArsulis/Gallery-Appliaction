@@ -1,0 +1,12 @@
+com\insoft\practice\conf\ZKInit.class
+com\insoft\practice\components\DeleteImageComp.class
+com\insoft\practice\conf\ZKConf.class
+com\insoft\practice\viewmodel\DeleteImageVm.class
+com\insoft\practice\conf\Initializer.class
+com\insoft\practice\SpringBootWebApplicationZK.class
+com\insoft\practice\viewmodel\SearchPageVm.class
+com\insoft\practice\components\TableComp.class
+com\insoft\practice\conf\SecurityConfiguration.class
+com\insoft\practice\viewmodel\ViewImageVm.class
+com\insoft\practice\viewmodel\HomePageVm.class
+com\insoft\practice\viewmodel\EditImageVm.class
